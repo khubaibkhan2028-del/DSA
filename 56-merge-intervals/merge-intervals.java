@@ -6,11 +6,9 @@ class Solution {
         Arrays.sort(intervals, (a, b) -> Integer.compare(a[0], b[0]));
         List<int[]> merged = new ArrayList<>();
         for (int[] current : intervals) {
-  
             if (merged.isEmpty() || merged.get(merged.size() - 1)[1] < current[0]) {
                 merged.add(current);
-            } else {
-         
+            } else { 
                 merged.get(merged.size() - 1)[1] = Math.max(merged.get(merged.size() - 1)[1], current[1]);
             }
         }
