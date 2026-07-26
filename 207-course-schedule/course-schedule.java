@@ -1,8 +1,7 @@
 class Solution {
     public boolean canFinish(int numCourses, int[][] prerequisites) {
         List<List<Integer>> adj = new ArrayList<>();
-        int[] inDegree = new int[numCourses];
-        
+        int[] inDegree = new int[numCourses];      
         for (int i = 0; i < numCourses; i++) {
             adj.add(new ArrayList<>());
         }   
