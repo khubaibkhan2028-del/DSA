@@ -6,7 +6,9 @@ class Solution {
             if (nums[mid] == target) {
                 return mid;
             }
+            // Left half is sorted
             if (nums[s] <= nums[mid]) {
+                 // target lies in left half
                 if (target >= nums[s] && target < nums[mid]) {
                     e = mid - 1;
                 } else {
