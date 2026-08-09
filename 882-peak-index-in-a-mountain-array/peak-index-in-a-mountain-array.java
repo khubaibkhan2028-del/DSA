@@ -4,7 +4,7 @@ class Solution {
 
         int n = arr.length;
         int lo = 0, hi = n - 1;
-        while (lo <hi) {
+        while (lo <=hi) {
             int mid = lo + (hi - lo) / 2;
             //  increasing side
             if (arr[mid] < arr[mid + 1]) {
@@ -12,7 +12,7 @@ class Solution {
             }
             //  decreasing side
             else {
-                hi = mid;
+                hi = mid-1;
             }
         }
 
