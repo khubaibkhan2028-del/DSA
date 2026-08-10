@@ -8,7 +8,7 @@ class Solution {
     //         else lo=mid+1;
     //     }
     //     return (int)hi; 
-
+     if(x==0) return 0;
      int lo=1, hi=x;
         while(lo<=hi){
             int mid= lo+(hi-lo)/2;
