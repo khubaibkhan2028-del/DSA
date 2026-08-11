@@ -1,6 +1,6 @@
 class Solution {
     public int sqrt(long n){
-        long lo=0, hi=n;
+        long lo=1, hi=n;
         while(lo<=hi){
             long mid= lo+(hi-lo)/2;
             if(mid==n/mid) return (int) mid;
